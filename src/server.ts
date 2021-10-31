@@ -42,7 +42,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
       res.sendFile(newimage, function() { deleteLocalFiles([newimage]) });
 
       return res.status(200)
-                .send(`Welcome to the Cloud, ${newimage}!`);
+                .send(`Image processing successfull at location : , ${newimage}!`);
 
   } );
   
